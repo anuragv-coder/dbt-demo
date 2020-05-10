@@ -1,0 +1,52 @@
+
+version: 2
+
+models:
+    - name: my_first_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: my_second_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: CARRIER
+      description: "Snowflake Gathi database"
+      columns:
+          - name: Row
+            description: "row numbers"
+            tests:
+                - unique
+                - not_null
+          - name: SOURCE
+            description: "Source name"
+            tests:
+                - unique
+                - not_null
+          - name: NAME
+            description: "Name"
+            tests:
+                - unique
+                - not_null
+          - name: ADDRESS
+            description: "ADDRESS"
+            tests:
+                - unique
+                - not_null
+          - name: DESCRIPTION
+            description: "DESCRIPTION"
+            tests:
+                - unique
+                - not_null 
+        
+                
