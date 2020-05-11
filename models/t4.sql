@@ -1,11 +1,11 @@
 with t1 as (
-    select * from {{ ref('t1_model') }}
+    select * from {{ ref('t1') }}
 ),
 t2 as (
-    select * from {{ ref('t2_model') }}
+    select * from {{ ref('t2') }}
 ),
 t3 as (
-    select * from {{ ref('t3_model') }}
+    select * from {{ ref('t3') }}
 ),
 policy as (
     SELECT * FROM GATHI_DB.GATHI_DATA.POLICY

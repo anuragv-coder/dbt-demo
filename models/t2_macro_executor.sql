@@ -3,5 +3,5 @@
 {{ config(materialized='table') }}
 {% set column_name = 'INCIDENT_TYPE' %}
 select {{rename_category(column_name)}}
-from {{ ref('t2_model') }}
+from {{ ref('t2') }}
 

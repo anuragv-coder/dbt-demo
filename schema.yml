@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: t1
+    description: This table contains clickstream events from the marketing website
+    columns:
+        - name: country
+          description: Contains the country name
+          tests:
+              - unique
+              - not_null
+        - name: zip
+          quote: true
+          description: Contains the zipcode
+          tests:
+              - not_null
